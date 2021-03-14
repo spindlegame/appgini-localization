@@ -12,11 +12,13 @@ This is neither about automatic language detection. Solutions for this have alre
 
 # References
 AppGini Software: https://bigprof.com/appgini/
+AppGini on Github: https://github.com/bigprof-software
 AppGini User Interface Localization: https://bigprof.com/appgini/help/localizing-appgini-applications
 AppGini Forum Discussions on Localization: https://forums.appgini.com/phpbb/viewtopic.php?t=4129
 AppGini Forum Discussions on automatic language detection:https://forums.appgini.com/phpbb/viewtopic.php?t=3059
 
 OSCommerce: https://www.oscommerce.com/Products&Download=oscom2341
+OSCommerce on Github: https://github.com/osCommerce/oscommerce
 
 # Proposal
 OSCommerce uses a hook file for each base file in each language installed.
