@@ -17,3 +17,32 @@ AppGini Forum Discussions on Localization: https://forums.appgini.com/phpbb/view
 AppGini Forum Discussions on automatic language detection:https://forums.appgini.com/phpbb/viewtopic.php?t=3059
 
 OSCommerce: https://www.oscommerce.com/Products&Download=oscom2341
+
+# Proposal
+OSCommerce uses a hook file for each base file in each language installed.
+
+The hook file defines the translation following the model and is located at *\root\includes\languages\LANGUAGE_NAME\*: 
+
+__define('TABLE_FIELD', 'Table Filed Name in target Language');__
+
+In each base file it uses the following include that points to the specific language file related to the base file:
+
+__require(DIR_WS_LANGUAGES . $language . '/' . FILENAME_ACCOUNT);__
+  
+Wherever the field in the PHP outpout is used, it uses the following php echo (found at same path as AppGini at *\root\*):
+
+__<?php echo TABLE_FIELD; ?>__
+
+This requires certainly a file structure where all __table names__ and field names are defined, named __database_tables.php__, in a specific file at *\root\includes\*:
+
+__// define the database table names used in the project
+  define('TABLE_NAME', 'table_name_in_target_language');__
+  
+  
+Further it requires  a file structure where all __file names__ are defined in a specific file, __named filenames.php__, at *\root\includes\*:  
+  
+  
+__// define the filenames used in the project
+  define('FILENAME_ACCOUNT', 'account.php');__
+
+
