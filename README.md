@@ -15,3 +15,5 @@ AppGini Software: https://bigprof.com/appgini/
 AppGini User Interface Localization: https://bigprof.com/appgini/help/localizing-appgini-applications
 AppGini Forum Discussions on Localization: https://forums.appgini.com/phpbb/viewtopic.php?t=4129
 AppGini Forum Discussions on automatic language detection:https://forums.appgini.com/phpbb/viewtopic.php?t=3059
+
+OSCommerce: https://www.oscommerce.com/Products&Download=oscom2341
